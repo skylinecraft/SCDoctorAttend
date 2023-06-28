@@ -1,0 +1,17 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'xyz.daviddgtnt.sc.doctorattend'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    implementation 'org.apache.groovy:groovy:4.0.2'
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+}

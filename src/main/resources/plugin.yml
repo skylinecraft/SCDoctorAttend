@@ -1,0 +1,19 @@
+name: SCDoctorAttend
+version: 1.0
+author: DavidDGTNT
+main: xyz.daviddgtnt.sc.doctorattend.Main
+api-version: '1.20'
+softdepend:
+  - Essentials
+commands:
+  needdoctor:
+    description: Console command to get a doctor for a player
+    usage: /<command> player
+  doctorattend:
+    description: Command for doctors to attend to players
+    usage: /<command> player
+    permission: doctorattend.doctor
+permissions:
+  doctorattend.doctor:
+    description: Permission given to doctors
+    default: false
