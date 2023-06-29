@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 
 import java.util.Collection;
 
-public class NeedDoctor implements CommandExecutor {
+public class NeedDoctorCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         Player player;
