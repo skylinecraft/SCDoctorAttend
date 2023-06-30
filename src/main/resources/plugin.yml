@@ -1,5 +1,5 @@
 name: SCDoctorAttend
-version: 1.1
+version: 1.1.1
 author: DavidDGTNT
 main: xyz.daviddgtnt.sc.doctorattend.DoctorAttend
 api-version: '1.20'

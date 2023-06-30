@@ -14,7 +14,7 @@ public class DoctorAttendCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof ConsoleCommandSender) {
-            Bukkit.getLogger().warning("You cannot use this command from the console!");
+            sender.sendMessage("You cannot use this command from the console!");
             return true;
         }
 

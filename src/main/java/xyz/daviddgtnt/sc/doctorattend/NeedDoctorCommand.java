@@ -16,10 +16,9 @@ public class NeedDoctorCommand implements CommandExecutor {
         Player player;
         if (args.length < 1) {
             if (sender instanceof Player) {
-                player = (Player) sender;
-                player.sendMessage(ChatColor.RED + "You can't use that command! Go to the hospital if you need a doctor!");
+                sender.sendMessage(ChatColor.RED + "You can't use that command! Go to the hospital if you need a doctor!");
             } else {
-                Bukkit.getLogger().warning("You need to supply a player!");
+                sender.sendMessage("You need to supply a player!");
             }
             return true;
         }
@@ -32,11 +31,11 @@ public class NeedDoctorCommand implements CommandExecutor {
                 Bukkit.getLogger().info(args[0] + " called online doctors for help.");
                 this.callDoctors(player);
             } else {
-                player.sendMessage(ChatColor.RED + "You can't use that command! Go to the hospital if you need a doctor!");
+                sender.sendMessage(ChatColor.RED + "You can't use that command! Go to the hospital if you need a doctor!");
                 return true;
             }
         } else {
-            Bukkit.getLogger().warning("Player is not online.");
+            sender.sendMessage("Player is not online.");
             return true;
         }
 
